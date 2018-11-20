@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Britt Tarien - Home</title>
+  <title>Britt Tarien - Portfolio</title>
   <meta charset="utf-8"/>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
@@ -21,20 +21,35 @@
 
   <body>
     <div class="container">
-      <div class="row">
-        <div class="gallery">
-            <a href="#">
-              <img src="gears.jpg" alt="Forest" width="300" height="200">
-              <h2>Centered</h2>
-            </a>
-
+      <div class=projects>
+        <a href="row_project.html">
+          <h1> <u>Row Project</u> </h1>
+        </a>
+        <div class="row">
+            <div class="col-sm-4" id=row>
+              <div class = "vertical-center">
+                <img src="boat.png" width=100%>
+              </div>
+            </div>
+          <div class="col-sm-8">
+            <p>
+              My group used sensor fusion of iPhone sensors to more accurately model a competition rowboat. We worked with Hegemony Tech, a startup that is developing an app that gives rowers and coaches informative data used to improve rowing technique. The problem with raw iPhone sensor data is that the GPS samples about once every three seconds, so there is not enough resolution to see what happens within a stroke (which takes about 2 seconds). The accelerometer has an acceptable sampling frequency of 100 Hz, but since rowers are interested in speed and position, it must be integrated or double integrated which introduces a steep low-frequency drift. Either sensor alone does not provide accurate measurements. Conveniently, however, these two sensors are complementary to each other. We use sensor fusion algorithms to combine the GPS and accelerometer data to increase the precision and accuracy of the position and velocity metrics. With this data, we are able to see specific information at intra-stroke resolution with significantly better accuracy.
+            </p>
+          </div>
         </div>
+      </div>
 
-        <div class="gallery">
+      <!-- <h1> Uber </h1>
+      <div class="row" id = "projects">
+        <div class = "col-sm-4">
           <a href="#">
-            <img src="mountain.jpg" width="300" height="200">
+            <img src="mountain.jpg" width=100% top=50%>
           </a>
         </div>
+        <div class = "col-sm-8">
+          Hello
+        </div>
+      </div> -->
       </div>
     </div>
   </body>
