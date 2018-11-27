@@ -33,31 +33,84 @@
       </p>
       <div class="row">
         <div class="col-sm-6">
-          <img src="once_integrated.png" class="img-thumbnail">
+          <img src="once_integrated.png" class="img-thumbnail" width=75%>
         </div>
         <div class="col-sm-6">
-          <img src="twice_integrated.png" class="img-thumbnail">
+          <img src="twice_integrated.png" class="img-thumbnail" width=75%>
         </div>
       </div>
 
       <h2> The Solution </h2>
       <p>
-        It turns out that the GPS and accelerometer signals are quite complementary to each other. The GPS maintains a relatively accurate average speed over many strokes but does not give the resolution within a single stroke. The accelerometer, on the other hand, provides high resolution information but its average speed drifts off very quickly. We have built two filters - a complementary and a Kalman filter - which combine the two data streams to create a more accurate estimate of distance and speed.
+        It turns out that the GPS and accelerometer signals are quite complementary to each other. The GPS maintains a relatively accurate average speed over many strokes but does not give the resolution within a single stroke. The accelerometer, on the other hand, provides high resolution information but its average speed drifts off very quickly. We have built two filters, a complementary and a Kalman filter, which combine the two data streams to create a more accurate estimate of distance and speed.
       </p>
 
       <h3> Complementary Filter </h3>
-      <div class = "col-sm-6">
-      </div>
-      <div class = "col-sm-6">
-        <img src="CF.png" class="img-thumbnail" width=75% align=center>
+      <div class="row">
+        <div class = "col-sm-6">
+          <p>
+            The integrated acceleration is high-pass filtered to get rid of the low-frequency drift, but keep the high-frequency resolution within each stroke. The GPS is low-pass filtered to get rid of any high-frequency noise. These two signals are then summed together.
+          </p>
+          <p>
+            To get a more accurate result, we apply a linear extrapolation of the previous two GPS position points to get a more accurate prediction between the 0.3 Hz data points.
+          </p>
+          <p>
+            We use an optimization on each of our 16 data files to generate the optimal low and high cutoff frequencies. We are then able to use the average values over all runs in the filter. With the cutoff frequencies already built in, the filter only needs the previous two data points to operate and runs in real time.
+          </p>
+        </div>
+        <div class = "col-sm-6">
+          <img src="CF.png" class="img-thumbnail" width=100% align=center>
+        </div>
       </div>
 
       <h3> Kalman Filter </h3>
-      <h2> The Result </h2>
-      <img src="all_filters.png" class="img-thumbnail" width=75% align=center>
-      <p>
+      <div class = "row">
+        <div class = "col-sm-6">
+          <img src="KF.png" class="img-thumbnail" width=100% align=center>
+        </div>
+        <div class = "col-sm-6">
+        <p>
+          The Kalman filter uses Bayesian statistics to estimate the trajectory of the boat. Kalman filters involve two steps: a model prediction update step and a measurement update step. For the model prediction update, we use the accelerometer data to predict where the boat will be. The GPS is used for the measurement update. The Kalman filter also provides an estimate of the covariance which tells us how accurate the estimation is.
+        </p>
+        <p>
+          The R and Q matrices, which correspond to the sensor noise covariance and the process noise covariance respectively, are used to tune the Kalman filter. R defines how much to trust the sensors. So we set R to be 0.8 m, which we measured to be the variance in our iPhone sensor. Q defines how much to trust the model. We find Q by running an optimization, similar to the one for the cutoff frequencies in the complementary filter.
+        </p>
+        </div>
+      </div>
 
+      <h2> The Result </h2>
+      <h3> Experimental Validation </h3>
+      <p>
+        We used a differential GPS system (accurate to ~3mm) to define our "ground truth" data. We simultaneously logged data on the differential GPS and the iPhone while a rower performed passes at various speeds up and down a lake. We collected data on two different rower-boat configuration: a single scull boat (one seat) with an elite rower, and a double scull boat (two seats) with a single amateur rower. These offered two very different styles of rowing, so if our filters can perform well on both, then we know they are robust.
       </p>
-    </div>
+      <div class="row">
+        <div class="col-sm-4">
+          <img src="gps_mount.png" class="img-thumbnail" width=100% align=center>
+          <figcaption>Differential GPS mount</figcaption>
+        </div>
+        <div class="col-sm-4">
+          <img src="phone_mount.png" class="img-thumbnail"  align=center>
+          <figcaption>iPhone mount</figcaption>
+        </div>
+        <div class="col-sm-4">
+          <img src="map.png" class="img-thumbnail" width=100% align=center>
+          <figcaption>Boat path</figcaption>
+        </div>
+      </div>
+      <h3> Filter Results </h3>
+      <div class = "row">
+        <div class = "col-sm-8">
+          <img src="all_filters.png" class="img-thumbnail" align=center>
+        </div>
+        <div class = "col-sm-4">
+          <p>
+            Originally, Hegemony Tech was using the raw iPhone speed (green line) to measure speed. But, with our filters, you can now see drastically improved results in both resolution and accuracy. We are able to generate results that are almost as good as a $2,000 differential GPS system, using nothing more than the sensors that are already onboard an iPhone.
+          </p>
+        </div>
+      <div>
+        <p>
+
+          </p>
+      </div>
   </body>
 </html>

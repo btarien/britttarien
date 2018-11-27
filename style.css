@@ -1,5 +1,6 @@
 body {
   font-family: 'Muli', sans-serif;
+  padding-bottom: 20px;
 }
 
 header {
@@ -153,4 +154,8 @@ h1.title {
 a:hover {
   text-decoration: none;
   color: White;
+}
+
+figcaption {
+  text-align: center;
 }
