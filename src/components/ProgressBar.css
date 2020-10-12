@@ -1,0 +1,28 @@
+.bar-container {
+  height: 30px;
+  background-color: lightgray;
+  margin: 20px;
+  position: relative;
+}
+
+.bar {
+  height: 100%;
+  background-color: cadetblue;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0%;
+  transition: width 2s ease-in-out;
+}
+
+.bar-container > p,
+.percentage {
+  position: absolute;
+  line-height: 30px;
+  top: 0;
+  font-weight: lighter;
+}
+
+.percentage {
+  right: 10px;
+}

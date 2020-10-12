@@ -1,0 +1,34 @@
+* {
+  box-sizing: border-box;
+}
+
+#resume {
+  background-color: whitesmoke;
+  padding: 100px;
+}
+
+#resume h1 {
+  font-size: 40px;
+  font-style: bold;
+  color: cadetblue;
+}
+
+#resume h2 {
+  font-size: 20px;
+  font-style: normal;
+}
+
+#resume p,
+li {
+  font-size: 15px;
+  font-weight: lighter;
+}
+
+.education p {
+  padding: 0;
+  margin: 0;
+}
+
+#resume div {
+  padding: 10px;
+}
