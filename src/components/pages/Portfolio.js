@@ -16,7 +16,11 @@ export default function Portfolio() {
         <Card title="Website" img={WebsiteImg} href="home" />
         <Card title="Calculator" img={CalculatorImg} href="" />
         <Card title="Maze Game" img={MazeImg} />
-        <Card title="Match Up" img={MatchUpImg} href="/matchup" />
+        <Card
+          title="Match Up"
+          img={MatchUpImg}
+          href="https://btarien.github.io/matchup/"
+        />
         <Card title="To-Do List" img={TodoImg} />
         <Card title="Row Tracker" img={RowImg} />
       </div>
