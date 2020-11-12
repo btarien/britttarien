@@ -14,15 +14,17 @@ export default function Portfolio() {
       <h1>Portfolio</h1>
       <div className="cards">
         <Card title="Website" img={WebsiteImg} href="home" />
-        <Card title="Calculator" img={CalculatorImg} href="" />
-        <Card title="Maze Game" img={MazeImg} />
+        <Card title="Calculator" img={CalculatorImg} href="https://github.com/btarien/calculator" />
+        <Card title="Maze Game" img={MazeImg}
+          href="https://btarien.github.io/maze/"
+          />
         <Card
           title="Match Up"
           img={MatchUpImg}
           href="https://btarien.github.io/matchup/"
         />
-        <Card title="To-Do List" img={TodoImg} />
-        <Card title="Row Tracker" img={RowImg} />
+        <Card title="To-Do List" img={TodoImg} href="https://github.com/btarien/to-do" />
+        <Card title="Row Tracker" img={RowImg} href="https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0225690" />
       </div>
     </div>
   );
