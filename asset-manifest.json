@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/btarien.github.io/static/css/main.3be5c0c5.chunk.css",
-    "main.js": "/btarien.github.io/static/js/main.18c5b46c.chunk.js",
-    "main.js.map": "/btarien.github.io/static/js/main.18c5b46c.chunk.js.map",
+    "main.css": "/btarien.github.io/static/css/main.8053ad23.chunk.css",
+    "main.js": "/btarien.github.io/static/js/main.93c0932a.chunk.js",
+    "main.js.map": "/btarien.github.io/static/js/main.93c0932a.chunk.js.map",
     "runtime-main.js": "/btarien.github.io/static/js/runtime-main.db71220f.js",
     "runtime-main.js.map": "/btarien.github.io/static/js/runtime-main.db71220f.js.map",
-    "static/js/2.5cef312c.chunk.js": "/btarien.github.io/static/js/2.5cef312c.chunk.js",
-    "static/js/2.5cef312c.chunk.js.map": "/btarien.github.io/static/js/2.5cef312c.chunk.js.map",
+    "static/js/2.3a9763c9.chunk.js": "/btarien.github.io/static/js/2.3a9763c9.chunk.js",
+    "static/js/2.3a9763c9.chunk.js.map": "/btarien.github.io/static/js/2.3a9763c9.chunk.js.map",
     "index.html": "/btarien.github.io/index.html",
-    "precache-manifest.dbca50a385183f7568e86c9b095050fd.js": "/btarien.github.io/precache-manifest.dbca50a385183f7568e86c9b095050fd.js",
+    "precache-manifest.ed98336b1305b276aa07a93d7649a1f0.js": "/btarien.github.io/precache-manifest.ed98336b1305b276aa07a93d7649a1f0.js",
     "service-worker.js": "/btarien.github.io/service-worker.js",
-    "static/css/main.3be5c0c5.chunk.css.map": "/btarien.github.io/static/css/main.3be5c0c5.chunk.css.map",
-    "static/js/2.5cef312c.chunk.js.LICENSE.txt": "/btarien.github.io/static/js/2.5cef312c.chunk.js.LICENSE.txt",
+    "static/css/main.8053ad23.chunk.css.map": "/btarien.github.io/static/css/main.8053ad23.chunk.css.map",
+    "static/js/2.3a9763c9.chunk.js.LICENSE.txt": "/btarien.github.io/static/js/2.3a9763c9.chunk.js.LICENSE.txt",
     "static/media/calculator.png": "/btarien.github.io/static/media/calculator.c7886f46.png",
     "static/media/headshot.jpeg": "/btarien.github.io/static/media/headshot.32f2106d.jpeg",
     "static/media/match-up.png": "/btarien.github.io/static/media/match-up.f900e980.png",
@@ -23,8 +23,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.db71220f.js",
-    "static/js/2.5cef312c.chunk.js",
-    "static/css/main.3be5c0c5.chunk.css",
-    "static/js/main.18c5b46c.chunk.js"
+    "static/js/2.3a9763c9.chunk.js",
+    "static/css/main.8053ad23.chunk.css",
+    "static/js/main.93c0932a.chunk.js"
   ]
 }
