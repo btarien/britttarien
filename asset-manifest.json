@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/btarien.github.io/static/css/main.8053ad23.chunk.css",
+    "main.css": "/btarien.github.io/static/css/main.4790809a.chunk.css",
     "main.js": "/btarien.github.io/static/js/main.93c0932a.chunk.js",
     "main.js.map": "/btarien.github.io/static/js/main.93c0932a.chunk.js.map",
     "runtime-main.js": "/btarien.github.io/static/js/runtime-main.db71220f.js",
@@ -8,9 +8,9 @@
     "static/js/2.3a9763c9.chunk.js": "/btarien.github.io/static/js/2.3a9763c9.chunk.js",
     "static/js/2.3a9763c9.chunk.js.map": "/btarien.github.io/static/js/2.3a9763c9.chunk.js.map",
     "index.html": "/btarien.github.io/index.html",
-    "precache-manifest.ed98336b1305b276aa07a93d7649a1f0.js": "/btarien.github.io/precache-manifest.ed98336b1305b276aa07a93d7649a1f0.js",
+    "precache-manifest.1023cda8fa54506dff300ca8df7718fc.js": "/btarien.github.io/precache-manifest.1023cda8fa54506dff300ca8df7718fc.js",
     "service-worker.js": "/btarien.github.io/service-worker.js",
-    "static/css/main.8053ad23.chunk.css.map": "/btarien.github.io/static/css/main.8053ad23.chunk.css.map",
+    "static/css/main.4790809a.chunk.css.map": "/btarien.github.io/static/css/main.4790809a.chunk.css.map",
     "static/js/2.3a9763c9.chunk.js.LICENSE.txt": "/btarien.github.io/static/js/2.3a9763c9.chunk.js.LICENSE.txt",
     "static/media/calculator.png": "/btarien.github.io/static/media/calculator.c7886f46.png",
     "static/media/headshot.jpeg": "/btarien.github.io/static/media/headshot.32f2106d.jpeg",
@@ -24,7 +24,7 @@
   "entrypoints": [
     "static/js/runtime-main.db71220f.js",
     "static/js/2.3a9763c9.chunk.js",
-    "static/css/main.8053ad23.chunk.css",
+    "static/css/main.4790809a.chunk.css",
     "static/js/main.93c0932a.chunk.js"
   ]
 }

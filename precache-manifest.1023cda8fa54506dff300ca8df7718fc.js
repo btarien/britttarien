@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "81df9fd39a63f87c6977cec1d7146a03",
+    "revision": "ca00dc2aa85fc757c6948574c7d9b360",
     "url": "/btarien.github.io/index.html"
   },
   {
-    "revision": "d922ea80d251b5a40775",
-    "url": "/btarien.github.io/static/css/main.8053ad23.chunk.css"
+    "revision": "9fb776adc9cdf89b954d",
+    "url": "/btarien.github.io/static/css/main.4790809a.chunk.css"
   },
   {
     "revision": "fb0252c6dee490e4286c",
@@ -16,7 +16,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/btarien.github.io/static/js/2.3a9763c9.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "d922ea80d251b5a40775",
+    "revision": "9fb776adc9cdf89b954d",
     "url": "/btarien.github.io/static/js/main.93c0932a.chunk.js"
   },
   {
