@@ -1,3 +1,6 @@
+This repository hosts the code for my personal website. It is written in JavaScript using the React framework. The live version can be viewed at https://btarien.github.io
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
