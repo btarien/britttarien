@@ -9,15 +9,15 @@ export default function Resume() {
       <ScrollAnimation animateIn="fadeInUp" offset={300} animateOnce={true}>
         <div className="education">
           <h1>Education</h1>
-          <div className="davis">
-            <h2>University of Californis, Davis</h2>
-            <p>Bachelor of Science in Mechanical Engineering</p>
-            <p>Graduation year: 2018</p>
-          </div>
           <div className="lewagon">
             <h2>Le Wagon - Munich</h2>
             <p>Full-stack web development coding bootcamp</p>
             <p>Completion: December 2020</p>
+          </div>
+          <div className="davis">
+            <h2>University of Californis, Davis</h2>
+            <p>Bachelor of Science in Mechanical Engineering</p>
+            <p>Graduation year: 2018</p>
           </div>
         </div>
       </ScrollAnimation>
@@ -28,13 +28,28 @@ export default function Resume() {
           animateOnce={true}
         >
           <h1>Employment History</h1>
+          <div className="presize">
+            <h2>Front-End Intern | Presize | February – August 2021</h2>
+            <ul>
+              <li>
+                Created mathematical optimization model to determine necessary
+                parameters of reactants for highest yield in complex, multi-step
+                flow of consecutive chemical reactions
+              </li>
+              <li>
+                Implemented optimization model and accompanying GUI in Python
+              </li>
+            </ul>
+          </div>
           <div className="sri">
             <h2>
               Temporary Researcher | SRI International | May – September 2019
             </h2>
             <ul>
               <li>
-                Created mathematical optimization model to determine necessary parameters of reactants for highest yield in complex, multi-step flow of consecutive chemical reactions
+                Created mathematical optimization model to determine necessary
+                parameters of reactants for highest yield in complex, multi-step
+                flow of consecutive chemical reactions
               </li>
               <li>
                 Implemented optimization model and accompanying GUI in Python
@@ -47,7 +62,8 @@ export default function Resume() {
             <h2>Research Engineer | BioCeryx | January – May 2019 </h2>
             <ul>
               <li>
-                Tested and modified hardware elements of analyzer that performs biological reactions in analysis of fetal DNA
+                Tested and modified hardware elements of analyzer that performs
+                biological reactions in analysis of fetal DNA
               </li>
               <li>
                 Designed microfluidics chambers and performed thermal analysis
@@ -69,11 +85,10 @@ export default function Resume() {
                 Built data fusion/filtering algorithms to model rowboat dynamics
               </li>
               <li>
-                Increased accuracy by 20% and created intra-stroke data resolution
+                Increased accuracy by 20% and created intra-stroke data
+                resolution
               </li>
-              <li>
-                Published paper in PLoS One about filtering algorithms
-              </li>
+              <li>Published paper in PLoS One about filtering algorithms</li>
             </ul>
           </div>
         </ScrollAnimation>
@@ -84,10 +99,13 @@ export default function Resume() {
             </h2>
             <ul>
               <li>
-                Designed, manufactured, and tested instrumentation for autonomous semi-trucks using modern CAD/CAM and vibration analysis software
+                Designed, manufactured, and tested instrumentation for
+                autonomous semi-trucks using modern CAD/CAM and vibration
+                analysis software
               </li>
               <li>
-                Designed and built thermal test chamber for validating LiDAR units
+                Designed and built thermal test chamber for validating LiDAR
+                units
               </li>
             </ul>
           </div>
@@ -96,13 +114,13 @@ export default function Resume() {
       <ScrollAnimation animateIn="fadeIn" animateOnce={true}>
         <div className="skills">
           <h1>Skills</h1>
-          <ProgressBar text="Ruby" percent={80} />
-          <ProgressBar text="Ruby on Rails" percent={80} />
-          <ProgressBar text="HTML & CSS" percent={90} />
+          <ProgressBar text="JavaScript & Typescript" percent={90} />
+          <ProgressBar text="React" percent={90} />
+          <ProgressBar text="Redux" percent={80} />
+          <ProgressBar text="HTML & CSS" percent={100} />
+          <ProgressBar text="Ruby & RoR" percent={70} />
           <ProgressBar text="SQL" percent={100} />
           <ProgressBar text="Git" percent={80} />
-          <ProgressBar text="JavaScript" percent={60} />
-          <ProgressBar text="React" percent={40} />
           <ProgressBar text="Python" percent={50} />
         </div>
       </ScrollAnimation>

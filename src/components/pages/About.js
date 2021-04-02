@@ -12,10 +12,9 @@ export default function About() {
           <p>
             I graduated with my Bachelor's degree in Mechanical Engineering from
             UC Davis in California a couple of years ago. After working for a
-            bit, I realized that I love to code. I am currently enrolled in a
-            web development coding bootcamp at Le Wagon in Munich. After
-            completion of this certification, I hope to find a junior web
-            developer job in Munich.
+            bit, I realized that I love to code. I completed the web development
+            coding bootcamp at Le Wagon in Munich last year. I have since been
+            working at a startup in Munich called Presize as a Front-End Intern.
           </p>
         </div>
       </div>
